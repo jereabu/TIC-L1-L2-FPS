@@ -31,10 +31,11 @@ public class BuscarElementoEnElArray : MonoBehaviour
         {
             if (arrayDeMesas[i].GetComponent<Mesa>().dueño == "Jeronimo")
             { 
-                isFound = true;
+                
                 Destroy(arrayDeMesas[i]);
                 return;
             }
+            i++;
         }
     }
 }
